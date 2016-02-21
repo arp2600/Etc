@@ -61,3 +61,23 @@ Iterate over the lines in a file. Returns a tuple `(i, progress_info)`,
 where `progress_info` can be either a `ProgressInfo` object, or `None`.
 `info_frequency` is the time in seconds that pass between valid `progress_info`
 objects getting returned from the generator.
+
+Classes
+-------
+
+    ProgressInfo
+
+Information on the current progress, elapsed time, and time remaining of
+the current generator.
+
+    ProgressInfo.progress
+
+Current progress from 0 to 1 of the generator.
+
+    ProgressInfo.elapsed_time
+
+Time in seconds the generator has been running.
+
+    ProgressInfo.time_remaining()
+
+Estimated time remaining of the loop.
